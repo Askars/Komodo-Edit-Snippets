@@ -1,0 +1,24 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "opencsv", 
+  "value": [
+    "open(my [[%ask1:filehandle_var:$fh]], [[%tabstop:FILE]]);", 
+    "", 
+    "# Burn headers", 
+    "my $headers = <[[%ask1]]>;", 
+    "", 
+    "while (my $line = <[[%ask1]]>) {", 
+    "   chomp $line;", 
+    "   my @splitline = split /[[%ask:separator:,]]/, $line;", 
+    "   [[%tabstop:#code]]", 
+    "}", 
+    "", 
+    "close([[%ask1]]);", 
+    "!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "false", 
+  "version": "1.0.12", 
+  "type": "snippet", 
+  "indent_relative": "true", 
+  "auto_abbreviation": "true"
+}
